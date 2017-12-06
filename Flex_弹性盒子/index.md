@@ -6,7 +6,7 @@
   - container(parent)
   - item (child)
 
-Tips: flex layout includes 12 css Attributes. Each of parent and child has 6. Normally, we usually use 4 attributes, and each of them has 2.
+注：弹性布局共包含12个css属性，其中父容器和子容器各6个。我们通常用的有4个属性，父子容器各有2个。
 
 Container:
 1. container(parent)
