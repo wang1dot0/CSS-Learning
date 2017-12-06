@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			.dad {
+				position: relative;
+				margin: 0 auto;
+				height: 400px;
+				width: 400px;
+			}
+			
+			.son {
+				border: 10px solid hsla(0, 0%, 100%, 0.5);
+				background: white;
+				background-clip: padding-box;
+				position: absolute;
+				box-shadow: 0 0 0 10px #655, 0 0 0 20px deeppink, 0 0 0 30px lightblue, 0 2px 5px 15px rgba(0, 0, 0, 0.6);
+				padding: 10px;
+				margin: 30px;
+			}
+			.son p {
+				padding: 5px 10px;
+			}
+		</style>
+	</head>
+	<body style="background: #ffe">
+		<div class="dad">
+			<div class="son" style="height: 200px; width: 200px;">
+			<p>Can I has semi-transparent borders? Pretty please?</p>
+			</div>
+		</div>
+	</body>
+</html>
