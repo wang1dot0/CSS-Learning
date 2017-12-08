@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      /* project 1: 文字倾斜，pass; */
+      /* .son {
+        background: #fb3;
+        transform: skewX(-45deg);
+      } */
+      /* scheme 2: 需要外层包裹; */
+      /* .dad {
+        transform: skewX(-45deg);
+      }
+      .son {
+        background: #fb3;
+        transform: skewX(45deg);
+      } */
+      /* scheme 3: ; */
+      .son {
+        position: relative;
+        padding: 1em;
+      }
+      .son::before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1111;
+        background: #fb3;
+        transform: skew(-20deg);
+      }
+    </style>
+  </head>
+  <body style="background: #ffe">
+    <!-- <div class="dad">
+      <div class="son" style="height: 150px; width: 200px;">
+        Can I has semi-transparent borders? Pretty please?
+      </div>
+    </div> -->
+    <a class="son">Btn text</button>
+  </body>
+</html>

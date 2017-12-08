@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .dad {
+      }
+      
+      .son {
+        background: #655;
+        background-image: radial-gradient(tan 30%, transparent 0),
+                          radial-gradient(tan 30%, transparent 0);
+        background-size: 40px 40px;
+        background-position: 0 0, 20px 20px;
+      }
+
+      /* scss处理
+      @mixin polka($size, $dot, $base, $accent) {
+        background: $base;
+        background-image: radial-gradient($accent $dot, transparent 0),
+                          radial-gradient($accent $dot, transparent 0);
+        background-size: $size $size;
+        background-position: 0 0, $size/2 $size/2;
+      }
+      
+      @include polka(30px, 30%, #655, tan); */
+    </style>
+  </head>
+  <body style="background: #ffe">
+    <div class="dad">
+      <div class="son" style="height: 200px; width: 200px;">
+      Can I has semi-transparent borders? Pretty please?
+      </div>
+    </div>
+  </body>
+</html>

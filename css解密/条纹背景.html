@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      .dad {
+      }
+      
+      /* 水平条纹 .son {
+        border: 10px solid #655;
+        background: linear-gradient(#fb3 60%, #58a 60%);
+        background-size: 100% 40px;
+      } */
+      
+      /* 竖直条纹 .son {
+        background: linear-gradient(to right, #fb3 50%, #58a 0);
+        background-size: 40px 100%;
+      } */
+
+      /* 斜向切片条纹 .son {
+        background: linear-gradient(45deg, #fb3 50%, #58a 0);
+        background-size: 40px 40px;
+      } */
+
+      /* 45°斜向条纹 .son {
+        background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+        background-size: 56.57px 56.57px;
+      } */
+      /* 这个相比前一个更灵活 */
+      /* .son {
+        background: repeating-linear-gradient(45deg, #fb3, #fb3 20px, #58a 0, #58a 40px);
+      } */
+
+      /* 任意角度变化
+      .son {
+        background: repeating-linear-gradient(25deg, #fb3, #fb3 20px, #58a 0, #58a 40px);
+      } */
+      /* .son {
+        background: repeating-linear-gradient(30deg, #79b, #79b 20px, #58a 0, #58a 40px);
+      } */
+      .son {
+        background: #58a;
+        background-image: repeating-linear-gradient(30deg, hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1) 20px, transparent 0, transparent 40px)
+      }
+    </style>
+  </head>
+  <body style="background: #ffe">
+    <div class="dad">
+      <div class="son" style="height: 200px; width: 200px;">
+      Can I has semi-transparent borders? Pretty please?
+      </div>
+    </div>
+  </body>
+</html>
