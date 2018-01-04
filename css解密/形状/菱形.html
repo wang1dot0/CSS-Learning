@@ -2,17 +2,31 @@
 <html>
   <head>
     <style>
-      .pie {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background: #655;
+      /* hack
+       .son {
+        margin: 3em 0 0 3em;
+        width: 225px;
+        transform: rotate(45deg);
+        overflow: hidden;
+      }
+      .son > img {
+        max-width: 100%;
+        transform: rotate(-45deg) scale(1.43);
+      } */
+      img {
+        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+        transition: 1s clip-path;
+      }
+
+      img:hover {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
       }
     </style>
   </head>
   <body style="background: #ffe">
     <div class="dad">
-      <div class="pie">
+      <div class="son">
+        <img src="image.png" alt="..." />
       </div>
     </div>
   </body>
